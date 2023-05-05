@@ -1,0 +1,65 @@
+body{
+    background-color:#d0ece7 ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    background-color: white;
+    height: 70%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+}
+.imgLogo{
+    margin: 30px;
+    height: 140px;
+}
+.btn{
+    margin: 10px;
+    background-color:#16a085;
+    border-radius: 10px;
+    border: 0;
+    width: 25%;
+    height: 50px;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size:16px;
+    margin-bottom: 40px;
+}
+.errMessage{
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    padding-top: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.intbox{
+    font-size:16px;
+    height: 40px;
+    width: 90%;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="reg_style.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="container">
+            <div class="textBox">
+                
+                <div class="inputbox">
+                    
+                    <div class="regDets" style="font-family: 'Times New Roman', Times, serif;">
+                        <h1>User Registration</h1> 
+                     </div>
+                     
+                     <img src="images/robot.png" alt="" class="imgLogo"> <br>    
+                    <div class="errMessage" id="errMessage" style="background-color: aquamarine; visibility: hidden;"></div>
+                    <div class="contentko" style="float: inline-start;">
+                    <form action="getters.php?name=name&email=email&password=password">
+                        <input type="text" class="intbox" placeholder=" Name" id="name1" onclick="nameOver()" onmouseout="nameOut()" name="name" autocomplete="off"> <br>
+                        <input type="text" class="intbox" placeholder=" Email Address" id="email1" onclick="nameOver2()" onmouseout="nameOut2()" name="email" autocomplete="off"> <br>
+                        <input type="password" class="intbox" placeholder=" Password" id="password1" onclick="nameOver3()" onmouseout="nameOut3()" name="password" autocomplete="off">
+                        <br>
+                        <hr>
+                        <div class="btns">
+                        <button href="" class="btn" type="submit" value="Login">Sign Up</button>
+                        <button class="btn" type="reset">Clear</button>
+                        <button class="btn" type="button">
+                            <a id="btnL" href="index.php" style="text-decoration: none;" class="btn" type="button">Login</a>
+                        </button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+
+                    <script>
+                            function nameOver(){
+                                const elem = document.getElementById("errMessage");
+                                document.getElementById("errMessage").innerHTML = "Enter complete name.";
+                                elem.style.visibility = 'visible';
+                            }
+
+                            function nameOut(){
+                                const elem = document.getElementById("errMessage");
+                                elem.style.visibility = 'hidden';
+                            }
+                        
+                            function nameOver2(){
+                                const elem = document.getElementById("errMessage");
+                                document.getElementById("errMessage").innerHTML = "Enter valid email address.";
+                                elem.style.visibility = 'visible';
+                            }
+
+                            function nameOut2(){
+                                const elem = document.getElementById("errMessage");
+                                elem.style.visibility = 'hidden';
+                            }
+
+                            function nameOver3(){
+                                const elem = document.getElementById("errMessage");
+                                document.getElementById("errMessage").innerHTML = "Enter password.";
+                                elem.style.visibility = 'visible';
+                            }
+
+                            function nameOut3(){
+                                const elem = document.getElementById("errMessage");
+                                elem.style.visibility = 'hidden';
+                            }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
